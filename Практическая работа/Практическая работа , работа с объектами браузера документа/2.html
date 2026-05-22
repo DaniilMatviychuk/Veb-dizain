@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center"> Растительные продукты</h1>
+    <ul>
+        <li id ="list"><b>Фрукты:</b><a href="http://ru.wikipedia.org/wiki/..."> Фрукты</a></li>
+        <li>Яблоки</li>
+        <li>Груши</li>
+        <li>Бананы</li>
+    </ul>
+    <ul>
+    <li id ="list"><b>Овощи:</b><a href="http://ru.wikipedia.org/wiki/..."> Овощи </a></li>
+    <li>Помидоры</li>
+    <li>Картошка</li>
+</ul>
+    <script>
+    //Замена "Картошки" на "Огурцы" 
+    var listltem = document.getElementById("list").getElementsByTagName("li");
+    listltem.textContent = "Огурцы" 
+    </script>
+</body>
+</html>

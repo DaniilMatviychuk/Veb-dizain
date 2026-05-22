@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var myBrowser=new Object();
+    myBrowser.name="Microsoft Internet Explore";
+    myBrowser["version"]="9.0";
+    for (var x in myBrowser){
+        document.write("1 способ " + x + "<br>" );
+        //Перебирает свойства объекта myBrowser
+        //Выдаст name, version
+        document.write("2 способ " + myBrowser[x] + "<br>");
+        //Выдаст конкретные значение свойств
+        //Microsoft Internet Explore,9.0
+    }
+   </script> 
+</body>
+</html>

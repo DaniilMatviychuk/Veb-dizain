@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Портфолио работ</title>
+<style type="text/css">
+ul.menu{
+list-style:none; /* Убираем маркер списка */
+/* background:#F9E3C3;  Задаём цвет фона меню или списка */
+width:8em; /* Ширина блока */
+padding:0 0 0 0; /* Отступы внутри блока */
+font-size: 14pt;
+}
+li.submenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:#ffffff; /* Цвет фона */
+}
+h3.mainmenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:#ffffff; /* Цвет фона */
+}
+li a{
+text-decoration:none; /* Убираем нижнее подчеркивание у ссылок */
+color:rgb(197, 173, 16); /* Цвет текста ссылки */
+}
+/*стиль элемента списка и ссылки при наведении на него курсора мыши*/
+li:hover,li:hover a {
+background:#f60909; /* Фон пункта меню при выделении */
+color:#000000; /* Цвет ссылки */
+cursor:pointer; /* Устанавливаем вид курсора при выделении пункта меню */
+}
+</style>
+</head>
+<body background="1.gif">
+    <img src="./1.png" align="left" height="150px" width="150px" style="margin-top: 17%;">
+     <img src="./5.png" align="right" height="200px" width="200px" style="margin-top: 17%;">
+    <script>
+        function Ok(){
+            var Elem="Фамилия: " + document.f.Family.value + "\nИмя: " + document.f.Name.value + "\nГруппа: " + document.f.Group.value;
+            var A = new Array (document.f.t1, document.f.t2, document.f.t3, document.f.t4, document.f.t5, document.f.t6, document.f.t7, document.f.t8, document.f.t9, document.f.g1, document.f.g2, document.f.g3, document.f.g4, document.f.g5, document.f.g6, document.f.g7,document.f.g8, document.f.g9, document.f.s1, document.f.s2, document.f.s3, document.f.s4, document.f.s5, document.f.s6, document.f.s7, document.f.s8, document.f.s9, document.f.h1, document.f.h2, document.f.h3);
+            var Res=0;
+            for (i in A){
+                if (A[i].checked) Res = Res + parseInt(A[i].value);
+            }
+            switch (Res){
+                case 3:alert(Elem +"\nВаша отметка - отлично");
+                break;
+                case 2:alert(Elem +"\nВаша отметка - хорошо");
+                break;
+                case 1:alert(Elem +"\nВаша отметка - удовлетворительно");
+                break;
+                case 0:alert(Elem +"\nВаша отметка - неудовлетворительно");
+                break;
+            }
+        }
+    </script>
+<!--Создаём таблицу контейнер, которой задаём следующее
+оформление:
+border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+align="center" - размещаем контейнер по центру экрана.
+rules="rows" - убираем двойную рамку.
+style="width:60%;" - добавляем стилевое свойства, делающее контейнер и весь сайт "резиновым".
+Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<table border="1" align="center" rules="rows" style="width:60%;">
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку строки-->
+<td>
+<!--ШАПКА САЙТА-->
+
+<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+Оформление:
+border="0" - рамка толщиной в 0 px
+background="URL" - картинка в шапке сайта, если требуется.
+Адрес картинки вы должны вставить свой.
+bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+cellpadding="10" - отступ содержимого от рамки не менее 10px.
+style="width:100%; border-radius:5px;" - добавляем "резиновость"
+и закругляем уголки рамки-->
+<table border="0" background="URL" bgcolor="white" cellpadding="10" style="width:100%; border-radius:5px;">
+<!--Создаём строку таблицы-->
+<tr>
+<!--Создаём ячейку таблицы с логотипом-->
+<td> <img src='logo_png.png' width='150' height='100'> </td>
+<th>
+<!--Содержание ячейки Заголовок сайта-->
+<h1 style='margin-bottom: -25px; color:rgb(197, 173, 16);'>Портфолио практических работ <br> Матвийчук Даниила Юрьевича</h1>
+<h4 style="color: rgb(197, 173, 16); margin-bottom: -25px;">Представлены работы с использованием основ языка веб-программирования JavaScript</h4>
+     <h5  style="color: rgb(197, 173, 16); font-size: 16px;" align='right' style='margin-bottom: -35px'>Дата:
+          <script>
+          var d = new Date();
+          var day=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота");
+          var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа",
+          "сентября","октября","ноября","декабря");
+          document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]+ " " + d.getFullYear() +'г.');
+          </script>
+          </h5>
+     <h5  align='right' style="color: rgb(197, 173, 16); margin-bottom: 20px;">Время: <time id="currentTime"></time>
+          <script>
+            var timeElement = document.getElementById('currentTime');
+            setInterval
+            (function () {
+              var currentTime = new Date();
+              timeElement.textContent = currentTime.toLocaleTimeString();
+            }, 1000);
+          </script></h5>
+<!--Закрываем таблицу ШАПКА САЙТА-->
+</th>
+</tr>
+</table>
+
+<!--ОСНОВНОЙ КОНТЕНТ-->
+
+<!--В этой же ячейке контейнера создаём ещё одну таблицу
+для основного контента.
+Оформление как и в предыдущей таблице-->
+
+<table border="1" bgcolor="white" cellpadding="10" style="width:100%; border-radius:5px;">
+<!--Создаём строку-->
+<tr>
+<!--Меню-->
+<!--Создаём ячейку меню-->
+<td bgcolor="white" valign='top'>
+<h3 class='mainmenu' style="color: rgb(197, 173, 16);">Меню сайта</h3>
+<nav>
+          <ul class='menu'>
+				
+               <li class='submenu'><a href="./index.html">Главная</a></li>
+               <li class='submenu'><a href="./page2.html">Фотогалерея</a></li>
+               <li class='submenu'><a href="./page3.html">Итоговый тест</a></li>
+          </ul>
+</nav>
+
+</td>
+<!--Создаём ячейку основного содержания
+Оформление:
+style="width:80%" - основной контент занимает 80% всей площади, 
+оставшиеся 20% для меню-->
+<td  style="width:80%">
+<h2 align='center' style="color: rgb(197, 173, 16);">Список практических работ:</h2>
+<form name="f">
+    <h2>Введите свои данные:</h2>
+    <table>
+        <tr>
+            <td><b>Фамилия:</b></td>
+            <td><input type='text' name="Family" size="20" onBlur="this.value=this.value.charAt(0).toUpperCase()+this.value.slice(1)"></td>
+        </tr>
+        <tr>
+            <td><b>Имя:</b></td>
+            <td><input type='text' name="Name" size="20" onBlur="this.value=this.value.charAt(0).toUpperCase()+this.value.slice(1)"></td>
+        </tr>
+        <tr>
+            <td><b>Группа:</b></td>
+            <td>
+                <select name="Group" size="1">
+                    <option value="1а">1а</option>
+                    <option value="1б">1б</option>
+                    <option value="1в">1в</option>
+                    <option value="1г">1г</option>
+                    <option value="1ю">1ю</option>
+                    <option value="1ж">1ж</option>
+                    <option value="1ф">1ф</option>
+                    <option value="2а">2а</option>
+                    <option value="2б">2б</option>
+                    <option value="2в">2в</option>
+                    <option value="2г">2г</option>
+                    <option value="2ж">2ж</option>
+                    <option value="2ю">2ю</option>
+                    <option value="2ф">2ф</option>
+                    <option value="3а">3а</option>
+                    <option value="3б">3б</option>
+                    <option value="3г">3г</option>
+                    <option value="3ю">3ю</option>
+                    <option value="3б">3б</option>
+                    <option value="3ж">3ж</option>
+                    <option value="3ф">3ф</option>
+                    <option value="4а">4а</option>
+                    <option value="4б">4б</option>
+                    <option value="4г">4г</option>
+                    <option value="4ж">4ж</option>
+                    <option value="4в">4в</option>
+                    <option value="4ф">4ф</option>
+                    <option value="5г">5г</option>
+                    <option value="5ж">5ж</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <p align="center">
+        <font size="5"><b>Тест</b></p>
+            <font size="4">Вопрос №1. <b> Какой тег определяет переход на следующую строку?
+            </b><br>
+            <font size="3">
+            <input type="radio" name="a1" id="t1" value="1"> br  <br>
+            <input type="radio" name="a1" id="t2" value="0"> a <br>
+            <input type="radio" name="a1" id="t3" value="0"> div <br>
+            <br><br>
+            <font size="4">Вопрос №2. <b> Какие способы верстки Web-страниц есть?</b><br>
+            <font size="3">
+            <input type="radio" name="a2" id="t4" value="1"> блочные, табличные <br>
+            <input type="radio" name="a2" id="t5" value="0"> иерархические <br>
+            <input type="radio" name="a2" id="t6" value="0"> реляционные <br>
+            <br><br>
+            <font size="4">Вопрос №3. <b> Имя тега, которым задается строка таблицы </b><br>
+            <font size="3">
+            <input type="radio" name="a3" id="t7" value="0"> table; <br>
+            <input type="radio" name="a3" id="t8" value="1"> tr;<br>
+            <input type="radio" name="a3" id="t9" value="0"> cell;<br>
+            <br><br>
+            <font size="4">Вопрос №4. <b> Укажите тэг, который соответствует элементу списка:</b><br>
+            <font size="3">
+            <input type="radio" name="a4" id="g1" value="1"> &lt;li><br>
+            <input type="radio" name="a4" id="g2" value="0"> &lt;ul>
+            <br>
+            <input type="radio" name="a4" id="g3" value="0"> &lt;ol>
+            <br>
+            <br><br>
+            <font size="4">Вопрос №5. <b> Какие тэги делают шрифт текста жирным? </b><br>
+            <font size="3">
+            <input type="radio" name="a5" id="g4" value="0"> &lt;ins> и &lt;del> <br>
+            <input type="radio" name="a5" id="g5" value="0"> &lt;ul> и &lt;ol> <br>
+            <input type="radio" name="a5" id="g6" value="1">  &lt;b> и &lt;strong><br>
+            <br><br>
+            
+            <font size="4">Вопрос №6. <b>  Укажите, какой элемент HTML 5 отвечает за воспроизведение видео: </b><br>
+            <font size="3">
+            <input type="radio" name="a6" id="g7" value="1">&lt;video><br>
+            <input type="radio" name="a6" id="g8" value="0">&lt;media><br>
+            <input type="radio" name="a6" id="g9" value="0">&lt;movie><br>
+            <br><br>
+            
+            <font size="4">Вопрос №7. <b> Какой тэг содержит навигацию?</b><br>
+            <font size="3">
+            <input type="radio" name="a7" id="s1" value="1">  &lt;nav> <br>
+            <input type="radio" name="a7" id="s2" value="0"> &lt;geo> <br>
+            <input type="radio" name="a7" id="s3" value="0"> &lt;metanav> <br>
+            <br><br>
+            <font size="4">Вопрос №8. <b>Какой атрибут позволяет объединить ячейки таблицы по вертикали?</b><br>
+            <font size="3">
+            <input type="radio" name="a8" id="s4" value="0">Union<br>
+            <input type="radio" name="a8" id="s5" value="1">Rowspan<br>
+            <input type="radio" name="a8" id="s6" value="0">Colspan<br>
+            <br><br>
+            <font size="4">Вопрос №9. <b>Допустимое число заголовков первого уровня в HTML-документе составляет:</b><br>
+            <font size="3">
+            <input type="radio" name="a9" id="s7" value="1"> 1<br>
+            <input type="radio" name="a9" id="s8" value="0"> 3<br>
+            <input type="radio" name="a9" id="s9" value="0"> 7<br>
+            <br><br>
+            <font size="4">Вопрос №10. <b>В HTML не существует … тэгов.</b><br>
+            <font size="3">
+            <input type="radio" name="a10" id="h1" value="0">Одиночных<br>
+            <input type="radio" name="a10" id="h2" value="0">Парных<br>
+            <input type="radio" name="a10" id="h3" value="1">Тройных<br>
+            <br><br>
+        <p align="center">
+<input onclick='Ok();' type="button" value='Результат тестирования'>
+<input type="reset" value="Сброс"></p>
+</form>
+<!--ПОДВАЛ-->
+
+<!--Создаём таблицу подвала-->
+<table
+border="0"
+bgcolor="white"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<!--Создаём строку.-->
+<tr>
+<!--Создаём столбец-->
+<th>
+<h6 style="color: rgb(197, 173, 16); font-size: 14px;">	&#169; Матвийчук Даниил , 2024 <br>
+студент 3 курса специальности 44.02.06. Профессиональное обучение (по отраслям) - по отрасли информатика и вычислительная техника
+</h6>
+<!--Закрываем таблицу подвала. При желании в подвале можно сделать несколько строк и столбцов-->
+</th>
+</tr>
+</table>
+<!--Закрываем таблицу контейнера-->
+</td>
+</tr>
+</table>
+
+<!-- пишем скрипт -->
+<script>
+
+</script>
+
+</body>
+</html>

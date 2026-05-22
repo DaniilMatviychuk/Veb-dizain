@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center"> Работа с окнами </h1>
+    <script>
+        var myWindov;
+        function myWindovOpen(){
+            myWindov = window.open("http://yandex.ru" , "myWindov" , "top=250 , left=250 , width=250 , heigth=250" );
+        }
+        function myWindovClose(){
+            if (myWindov){
+                myWindov.Close();
+                myWindov = null;
+        }
+        }
+    </script>
+    <button onclick="myWindovOpen()"> Открыть окно </button>;
+    <button onclick="myWindovClose()"> Закрыть окно окно </button>;
+</body>
+</html>

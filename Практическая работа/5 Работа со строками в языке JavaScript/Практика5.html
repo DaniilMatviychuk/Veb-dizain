@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа со строками</title>
+</head>
+<body>
+    Первая строка:<b>сегодня пятница</b>
+    <br>
+    Вторая строка: <b>С ХЕЛЛОУИНОМ</b>
+<br>
+<br>
+Новая первая строка: <b id="p1"> </b><br>
+<br>
+Новая вторая строка: <b id="p2"> </b><br>
+
+<script>
+    var str1="сегодня пятница";
+   var ns1=str1.toUpperCase();
+    document.getElementById('p1').innerHTML=ns1;
+    var str2="С ХЕЛЛОУИНОМ";
+    var ns2=str2.toLowerCase();
+    document.getElementById('p2').innerHTML=ns2;
+</script>
+</body>
+</html>

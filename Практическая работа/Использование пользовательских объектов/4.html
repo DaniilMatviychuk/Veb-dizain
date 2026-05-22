@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function car (name,model,color){
+             /*конструктор оъекта car*/
+             this.name = name;
+             this.model  = model;
+             this.color = color;
+        }
+        var mycar = new car;
+        mycar.name="Ламбарджине";
+        mycar.model="Evo Coupe";
+        mycar.color="green";
+        car. prototype. owner = "Иванов";/*Добавляем новое свойство*/
+        alert(mycar.name + " " + mycar.model + " " + mycar.color + " " + mycar.owner);
+    </script>
+</body>
+</html>

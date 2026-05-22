@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   исходное слово: <b> Программирование </b> <br>
+   1 слово : <b id='sl1'> </b> <br>
+   2 слово : <b id='sl2'> </b> <br>
+   3 слово : <b id='sl3'> </b> <br>
+   4 слово : <b id='sl4'> </b> <br>
+   5 слово : <b id='sl5'> </b> <br>
+   <script>
+    var a='Программирование';
+    var a1=a.slice(3,8); // грамм
+document.getElementById('sl1').innerHTML=a1;
+var a2=a.slice(7,10)//мир
+document.getElementById('sl2').innerHTML=a2;
+var a3=a.slice(9,12)//ров
+document.getElementById('sl3').innerHTML=a3;
+var a4=a.slice(0,7)//програм
+document.getElementById('sl4').innerHTML=a4;
+var a5=a.slice(3,10)//граммир
+document.getElementById('sl5').innerHTML=a5;
+   </script>
+</body>
+</html>

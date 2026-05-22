@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простейшая галерея изображений</title>
+    <script>
+        var array = new Array (
+            "football074.png",
+            "unnamed.png",
+            "m1000x1000.png"
+        );
+        var i = 0;
+        function left() {
+            var image = document.getElementById("rotatorbutton");
+            i--;
+            if (i<0) i = array.length - 1;
+            image.src = array[i];
+        }
+        function right() {
+            var image = document.getElementById("rotatorbutton");
+            i++;
+            if (i == array.length) i = 0;
+            image.src = array[i];
+        }
+        </script>
+</head>
+<body>
+    <center>
+        <h2>Простейшая галерея изображений</h2>
+    </center>
+    <table align="center">
+        <tr>
+            <td>
+                <input type="button" name="left" value="<" onclick="left()"/>
+            </td>
+            <td>
+                <script>
+                document.write("<img id = 'rotatorbutton' src = '.football074.png'" + array[0] + "width = '200' height = '200'/>");
+                </script>
+            </td>
+            <td>
+                   <input type="button" name="right" value=">" onclick="right()"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

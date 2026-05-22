@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События</title>
+</head>
+<body>
+  <input type="button" value="Кнопка">
+  <p align="center" id="football"> Я выполнил работу по веб-дизайну и получу за неё оценку</p>  
+  <script>
+    var par = document.body.firstElementChild;
+    par.onmousedown = function(){
+        this.style.background = 'red';
+    };
+    par.onmouseup = function(){
+        this.style.background = 'transparent';    
+    };
+    par.onmouseover = function(){
+        this.style.background = 'green';
+    };
+    par.onmouseout = function(){
+        this.style.background = 'transparent';
+};
+    var al = document.getElementById('football');
+    al.onmousedown = function(){
+        this.style.background = 'Orange';
+    };
+    al.onmouseup = function(){
+        this.style.background = 'transparent';    
+    };
+    al.onmouseover = function(){
+        this.style.background = 'Grey';
+    };
+    al.onmouseout = function(){
+        this.style.background = 'transparent';
+    };
+  </script>
+</body>
+</html>

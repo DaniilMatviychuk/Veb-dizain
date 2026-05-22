@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смена размеров изображения при клике</title>
+    <script>
+    var bigsize="300";
+   var smallsize="150" 
+   function changeSizeImage(im) { 
+    if (im.height==bigsize)
+    im.height==smallsize;
+    else im.height=bigsize;
+   }
+</script>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td aling="center">
+                <img src="https://avatars.mds.yandex.net/i?id=200c11704987b320757d7b7969d8e711_l-12714644-images-thumbs&n=13" height="150" onclick="changeSizeImage(this)"/>
+                <br/>
+                <b>Изображение 1</b>
+            </td>
+            <tb aling="center">
+                <img src="https://avatars.mds.yandex.net/i?id=a6fd077df336ee5134a9a52a7003efc3_l-4076833-images-thumbs&n=13" height="150" onclick="changeSizeImage(this)"/>
+                <br/>
+                <b>Изображение 2</b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

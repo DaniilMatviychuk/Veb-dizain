@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Повторение с помощью функции setTimeout</title>
+    <script>
+        var k=1;
+        function ref() {
+            k=6;
+        }
+        function succpict() {
+            var d = document;
+            if (k<=5) {
+                if (k==1) {d.mypict.src="unnamed.png"; k++;}
+                else if (k==2) {d.mypict.src="m1000x1000.png"; k++;}
+                else if (k==3) {d.mypict.src="football074.png"; k++;}
+                else if (k==4) {d.mypict.src="football074.png"; k++;}
+                else if (k==5) {d.mypict.src="m1000x1000.png"; k++;}
+                setTimeout("succpict()", 2000);
+            }
+        }
+        </script>
+</head>
+<body onLoad="succpict()">
+    <p>Просмотр рисунков</p>
+    <img src="9_4-1.jpg" name="mypict" width="200">
+    <form>
+        <input type="reset" value="Остановить" onclick="ref();">
+        <input type="button" value="Начать снова" onclick="k=1; succpict();">
+    </form>
+</body>
+</html>

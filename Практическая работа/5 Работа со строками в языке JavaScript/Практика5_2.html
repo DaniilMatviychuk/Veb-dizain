@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа со строками</title>
+</head>
+<body>
+    Исходная фраза: <b>Сейчас идёт урок программирования</b>
+    <br>
+    Полученная фраза: <b id="fraz"></b>
+    <script>
+        var str="Сейчас идёт урок программирования.";
+        var fr=str.replace('программирования','веб-дизайна');
+        document.getElementById('fraz').innerHTML=fr;
+    </script>
+</body>
+</html>
